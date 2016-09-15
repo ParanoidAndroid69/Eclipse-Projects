@@ -1,0 +1,8 @@
+INDEX VERSION 1.3+/Users/enzomanso/Software/eclipse/workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3501700287.index
+1950370921.index
+352933864.index
+3551754600.index
+4169129562.index
+2341657869.index
+2916299662.index

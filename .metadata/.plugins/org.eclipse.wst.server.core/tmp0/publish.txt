@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Fri May 27 11:01:49 CEST 2016
+org.eclipse.jst.jee.server\:TestmartClient=/Library/Tomcat/wtpwebapps/TestmartClient
+org.eclipse.jst.jee.server\:Testmart=/Library/Tomcat/wtpwebapps/Testmart

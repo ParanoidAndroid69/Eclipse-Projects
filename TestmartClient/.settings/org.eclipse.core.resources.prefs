@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//src/DefaultNamespace/GetProductCategories.java=UTF-8
+encoding//src/DefaultNamespace/GetProductCategoriesResponse.java=UTF-8
+encoding//src/DefaultNamespace/ProductCatalog.java=UTF-8
+encoding//src/DefaultNamespace/ProductCatalogService.java=UTF-8
+encoding//src/DefaultNamespace/ProductCatalogServiceLocator.java=UTF-8
+encoding//src/DefaultNamespace/ProductCatalogSoapBindingStub.java=UTF-8

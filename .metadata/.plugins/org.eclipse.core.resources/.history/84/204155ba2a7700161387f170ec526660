@@ -1,0 +1,13 @@
+
+public class MainProgram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Punto p1;
+		p1 = new Punto(23,-12);
+		p1.setY(900);
+		System.out.println(p1.getY());
+		
+	}
+
+}

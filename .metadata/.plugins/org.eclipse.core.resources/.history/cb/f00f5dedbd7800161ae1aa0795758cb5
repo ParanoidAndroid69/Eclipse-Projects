@@ -1,0 +1,21 @@
+import java.util.Random;
+
+
+public class MainProgram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*Punto p1;
+		p1 = new Punto(23,-12);
+		p1.setY(900);
+		System.out.println(p1.getY());
+		*/
+		Random r = new Random();
+		
+		for (int i=0; i < 10000; i++ )
+			if (r.nextInt(10) == 5)
+				new Punto();
+		System.out.println("sono stati creati " + Punto.getConta() + " punti");
+	}
+
+}

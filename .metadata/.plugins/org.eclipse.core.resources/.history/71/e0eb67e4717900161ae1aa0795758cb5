@@ -1,0 +1,19 @@
+
+
+
+public class MainProgram {
+
+	public static void main(String[] args) 
+	
+	{
+		// TODO Auto-generated method stub
+		
+		//Rettangolo r = new Rettangolo(100,50,30,10);
+		Quadrato q = new Quadrato();
+		System.out.println("il rettangolo ha perimetro " + q.perimetro());
+		System.out.println("il rettangolo ha area " + q.area());
+
+	}
+		 
+
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Use this file to deploy some handlers/chains and services      --><!-- Two ways to do this:                                           --><!--   java org.apache.axis.client.AdminClient deploy.wsdd          --><!--      after the axis server is running                          --><!-- or                                                             --><!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   --><!--      from the same directory that the Axis engine runs         --><deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from ProductCatalogService WSDL service -->
+
+  <service name="ProductCatalog" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://DefaultNamespace"/>
+      <parameter name="wsdlServiceElement" value="ProductCatalogService"/>
+      <parameter name="schemaQualified" value="http://DefaultNamespace"/>
+      <parameter name="wsdlServicePort" value="ProductCatalog"/>
+      <parameter name="className" value="ProductCatalog"/>
+      <parameter name="wsdlPortType" value="ProductCatalog"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation xmlns:operNS="http://DefaultNamespace" xmlns:retNS="http://DefaultNamespace" xmlns:rtns="http://DefaultNamespace" xmlns:tns="http://DefaultNamespace" name="getProductCategories" qname="operNS:getProductCategories" returnQName="retNS:getProductCategoriesReturn" returnType="rtns:ArrayOf_xsd_anyType" returnItemQName="tns:item" soapAction="">
+      </operation>
+      <parameter name="allowedMethods" value="getProductCategories"/>
+
+      <typeMapping xmlns:ns="http://DefaultNamespace" qname="ns:&gt;getProductCategoriesResponse" type="java:DefaultNamespace.GetProductCategoriesResponse" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <arrayMapping xmlns:ns="http://DefaultNamespace" xmlns:cmp-ns="http://www.w3.org/2001/XMLSchema" qname="ns:ArrayOf_xsd_anyType" type="java:java.lang.Object[]" innerType="cmp-ns:anyType" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://DefaultNamespace" qname="ns:&gt;getProductCategories" type="java:DefaultNamespace.GetProductCategories" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+  </service>
+</deployment>
